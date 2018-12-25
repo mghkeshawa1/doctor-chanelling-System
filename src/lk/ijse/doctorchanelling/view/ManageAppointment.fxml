@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="1268.0" style="-fx-background-color: #2E2C39;" stylesheets="@../style/manageappointment.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.doctorchanelling.controller.ManageAppointmentController">
+   <children>
+      <Pane layoutY="12.0" prefHeight="32.0" prefWidth="1268.0" style="-fx-background-color: #059EC0; -fx-background-radius: 4;" />
+      <Label layoutX="24.0" layoutY="12.0" text="Appointment" textFill="#e4cfcf">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="68.0" text="Filter by :" textFill="#0088ff">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="142.0" layoutY="76.0" mnemonicParsing="false" text="id" textFill="#e4cfcf" />
+      <RadioButton layoutX="198.0" layoutY="76.0" mnemonicParsing="false" text="name" textFill="#e4cfcf" />
+      <RadioButton layoutX="267.0" layoutY="76.0" mnemonicParsing="false" text="Speciality" textFill="#e4cfcf" />
+      <JFXTextField focusColor="WHITE" layoutX="142.0" layoutY="111.0" prefHeight="25.0" prefWidth="265.0" promptText="Search by id, name or speciality..." styleClass="txtColor" stylesheets="@../style/manageappointment.css" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnFilter" buttonType="RAISED" layoutX="427.0" layoutY="111.0" onAction="#filterDoctor" prefHeight="30.0" prefWidth="104.0" styleClass="buttonY" stylesheets="@../style/appointment.css" text="Filter" textFill="WHITE" />
+      <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="434.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Search_52px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnViewDetails" buttonType="RAISED" layoutX="894.0" layoutY="391.0" onAction="#viewDoctorDetails" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #329BDD; -fx-background-radius: 10;" stylesheets="@../style/appointment.css" text=" View Details" textFill="#040704">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow height="56.58" radius="27.79" width="56.58" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnMakeAppointment" buttonType="RAISED" layoutX="1034.0" layoutY="391.0" onAction="#loadMakeAppointment" prefHeight="30.0" prefWidth="172.0" style="-fx-background-color: #329BDD; -fx-background-radius: 10;" stylesheets="@../style/appointment.css" text="   Make Appointment" textFill="#040704">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow height="56.58" radius="27.79" width="56.58" />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="900.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/View%20Details_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="1040.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Planner_52px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblDoctor" layoutX="24.0" layoutY="157.0" prefHeight="221.0" prefWidth="1224.0">
+         <columns>
+            <TableColumn fx:id="colDocId" prefWidth="57.0" text="Doctor_ID" />
+            <TableColumn fx:id="colFirstName" prefWidth="68.0" text="First_Name" />
+            <TableColumn fx:id="colLastName" prefWidth="69.0" text="Last_Name" />
+            <TableColumn fx:id="colSpeciality" prefWidth="60.0" text="Speciality" />
+            <TableColumn fx:id="colHospital" minWidth="0.0" text="Hospital" />
+            <TableColumn fx:id="colContact" minWidth="2.0" prefWidth="49.0" text="Contact" />
+            <TableColumn fx:id="colNIC" minWidth="0.0" prefWidth="95.0" text="NIC" />
+            <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="63.0" text="Address" />
+            <TableColumn fx:id="colGender" minWidth="0.0" prefWidth="54.0" text="Gender" />
+            <TableColumn fx:id="colNextAppointmentDate" minWidth="0.0" prefWidth="87.0" text="Next_appoinment_date" />
+            <TableColumn fx:id="colScheduleTime" minWidth="0.0" prefWidth="33.0" text="Schedule_time" />
+            <TableColumn fx:id="colPatientCount" minWidth="0.0" prefWidth="54.0" text="Patient_per_hour" />
+            <TableColumn fx:id="colFee" minWidth="0.0" prefWidth="54.0" text="Fee_for_appoinment " />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+   <effect>
+      <InnerShadow choke="0.47" height="50.65" radius="17.4125" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneSub" prefHeight="434.0" prefWidth="1268.0" style="-fx-background-color: #121417;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.doctorchanelling.controller.HomeController">
+   <children>
+      <Pane focusTraversable="true" layoutX="476.0" layoutY="14.0" opacity="0.22" prefHeight="79.0" prefWidth="229.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+         <children>
+            <Label layoutX="23.0" layoutY="10.0" text="Today Earnings">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="168.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../DoctorChannelling/src/lk/ijse/doctorchanelling/assets/Money%20Bag%20Pound_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="34.0" text="15">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane focusTraversable="true" layoutX="733.0" layoutY="15.0" opacity="0.22" prefHeight="79.0" prefWidth="229.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+         <children>
+            <Label layoutX="34.0" layoutY="10.0" text="Doctors Count">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="47.0" layoutX="167.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Administrator%20Male_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="33.0" text="15">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane focusTraversable="true" layoutX="988.0" layoutY="13.0" opacity="0.22" prefHeight="79.0" prefWidth="229.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+         <children>
+            <Label layoutX="32.0" layoutY="9.0" text="Total Patients">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="40.0" layoutX="170.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../DoctorChannelling/src/lk/ijse/doctorchanelling/assets/Circled%20User%20Male_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="31.0" text="15">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane focusTraversable="true" layoutX="14.0" layoutY="14.0" opacity="0.22" prefHeight="79.0" prefWidth="432.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+         <children>
+            <ImageView fitHeight="58.0" fitWidth="72.0" layoutX="345.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Plus_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="-1.0" text="Today Appointments">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="141.0" layoutY="41.0" text="15">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <LineChart layoutX="3.0" layoutY="134.0" prefHeight="298.0" prefWidth="610.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </LineChart>
+      <Label layoutX="140.0" layoutY="111.0" text="Total Income" textFill="#e1c7c7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="649.0" layoutY="134.0" prefHeight="298.0" prefWidth="575.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AreaChart>
+      <Label layoutX="861.0" layoutY="111.0" text="Total Income" textFill="#e1c7c7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="824.0" style="-fx-background-color: #2E2C39;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.doctorchanelling.controller.OtherServiceController">
+   <children>
+      <Label layoutX="25.0" layoutY="17.0" text="Other Services" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnVat" layoutX="115.0" layoutY="108.0" onAction="#loadVat" prefHeight="62.0" prefWidth="180.0" styleClass="paneA" stylesheets="@../style/otherservice.css" text="  Vat" textFill="#ffecec">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="125.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Tax_96px.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow choke="0.51" height="53.62" radius="21.119999999999997" width="32.86" />
+   </effect>
+</AnchorPane>

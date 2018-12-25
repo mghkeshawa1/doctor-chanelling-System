@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="848.0" style="-fx-background-color: #2E2C39;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.doctorchanelling.controller.ManagePatientController">
+   <children>
+      <JFXTextField fx:id="txtRefundId" focusColor="#303f6b" layoutX="19.0" layoutY="98.0" prefHeight="25.0" prefWidth="242.0" promptText="Refund ID" styleClass="txtColor" stylesheets="@../style/refund.css" unFocusColor="#c9c9c9">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRefundAmount" focusColor="#303f6b" layoutX="19.0" layoutY="152.0" prefHeight="25.0" prefWidth="242.0" promptText="Refund  Amount" styleClass="txtColor" stylesheets="@../style/refund.css" unFocusColor="#d7d7d7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDescription" focusColor="#303f6b" layoutX="19.0" layoutY="208.0" prefHeight="25.0" prefWidth="242.0" promptText="Description" styleClass="txtColor" stylesheets="@../style/refund.css" unFocusColor="#d7d7d7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <DatePicker fx:id="dtpDateRef" layoutX="14.0" layoutY="279.0" prefHeight="37.0" prefWidth="251.0" promptText="Refunded Date" />
+      <TableView fx:id="tblRefund" layoutX="280.0" layoutY="104.0" onMouseClicked="#vatTableClick" prefHeight="253.0" prefWidth="550.0" stylesheets="@../style/refund.css">
+         <columns>
+            <TableColumn fx:id="colRefundId" prefWidth="100.0" text="Re Id" />
+            <TableColumn fx:id="colRefundAmount" prefWidth="170.0" text="Refund Amount" />
+            <TableColumn fx:id="colDescription" prefWidth="141.0" text="Description" />
+            <TableColumn fx:id="colRefundedDate" prefWidth="136.0" text="Refunded Date" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtFilter" focusColor="WHITE" layoutX="283.0" layoutY="63.0" prefHeight="25.0" prefWidth="203.0" promptText="Filter by  id" styleClass="txtColor" stylesheets="@../style/manage%20doctor.css" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnFR" layoutX="502.0" layoutY="61.0" onAction="#filterRefund" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #95C11F;" text="Filter" />
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="507.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Search%20Property_64px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnRefund" layoutX="131.0" layoutY="339.0" onAction="#makeRefund" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #5B99B6; -fx-background-radius: 36;" text="  Make Refund " />
+      <JFXButton fx:id="btnClearAll" layoutX="13.0" layoutY="339.0" onAction="#clearRefundDetails" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: #329BDD; -fx-background-radius: 36;" text="Clear all" />
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="28.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Broom_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="147.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Refund_104px.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="12.0" prefHeight="32.0" prefWidth="840.0" style="-fx-background-color: #059EC0; -fx-background-radius: 4;">
+         <children>
+            <Label layoutX="15.0" layoutY="1.0" text="Refund" textFill="#dddddd">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+.background{
+      -fx-background-color: #0088FF;
+    
+}
+
+
+.box {
+    -fx-background-color: #498205;
+   -fx-opacity: 5.0;
+  
+}
+
+
+.box:hover{
+    -fx-background-color: #FF9200;
+   -fx-opacity: 2.0;
+  
+ 
+}
+.txtColor{
+    -fx-text-inner-color:#B8FF00;
+}

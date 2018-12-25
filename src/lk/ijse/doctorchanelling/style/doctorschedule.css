@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.txtColor{
+    -fx-text-inner-color:#B8FF00;
+}

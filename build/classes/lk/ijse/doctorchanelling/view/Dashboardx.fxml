@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #212325;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.doctorchanelling.controller.DashboardxController">
+   <children>
+      <Pane fx:id="btnLogout" cache="true" layoutX="1291.0" layoutY="289.0" onMouseClicked="#logOut" prefHeight="40.0" prefWidth="58.0" style="-fx-background-radius: 15;" styleClass="logOutButton" stylesheets="@../style/dashboardx.css">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Logout%20Rounded%20Up_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="127.5" radius="31.375" width="0.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="-1.0" layoutY="502.0" prefHeight="51.0" prefWidth="1366.0" style="-fx-background-color: #111315;">
+         <children>
+            <Label layoutX="6.0" layoutY="6.0" prefHeight="40.0" prefWidth="326.0" text=" MAIN NAVIGATION" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.28" color="#464444" height="255.0" radius="101.8575" width="154.43" />
+               </effect>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1250.0" layoutY="15.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="1107.0" layoutY="12.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Pane fx:id="panePatient" cache="true" layoutX="241.0" layoutY="72.0" onMouseClicked="#loadManagePatient" prefHeight="130.0" prefWidth="205.0" styleClass="box" stylesheets="@../style/dashboardx.css">
+               <children>
+                  <Label layoutX="51.0" layoutY="74.0" text="Manage Patient" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="77.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Add%20User%20Male_104px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <InnerShadow choke="0.19" height="0.0" radius="63.25" width="255.0">
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </InnerShadow>
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneReports" cache="true" layoutX="1145.0" layoutY="574.0" onMouseClicked="#loadReporsUi" prefHeight="130.0" prefWidth="205.0" styleClass="reportButton" stylesheets="@../style/dashboardx.css" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="574.0">
+         <children>
+            <Label layoutX="80.0" layoutY="73.0" text="Reports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="86.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Planner_104px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="0.0" radius="63.25" width="255.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+      <ImageView fitHeight="61.0" fitWidth="59.0" layoutX="1291.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Circled%20User%20Male_104px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1311.0" layoutY="164.0" text="user" textFill="#ddd6d6" />
+      <AnchorPane id="AnchorPane" fx:id="paneSub" layoutX="10.0" layoutY="41.0" prefHeight="434.0" prefWidth="1268.0" style="-fx-background-color: #121417;">
+         <children>
+            <Pane focusTraversable="true" layoutX="476.0" layoutY="14.0" opacity="0.22" prefHeight="79.0" prefWidth="229.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+               <children>
+                  <Label layoutX="23.0" layoutY="10.0" text="Today Earnings">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="168.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../DoctorChannelling/src/lk/ijse/doctorchanelling/assets/Money%20Bag%20Pound_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="66.0" layoutY="34.0" text="15">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+                     <input>
+                        <InnerShadow />
+                     </input></DropShadow>
+               </effect>
+            </Pane>
+            <Pane focusTraversable="true" layoutX="733.0" layoutY="15.0" opacity="0.22" prefHeight="79.0" prefWidth="229.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+               <children>
+                  <Label layoutX="34.0" layoutY="10.0" text="Doctors Count">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="53.0" fitWidth="47.0" layoutX="167.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Administrator%20Male_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="74.0" layoutY="33.0" text="15">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+                     <input>
+                        <InnerShadow />
+                     </input></DropShadow>
+               </effect>
+            </Pane>
+            <Pane focusTraversable="true" layoutX="988.0" layoutY="13.0" opacity="0.22" prefHeight="79.0" prefWidth="229.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="9.0" text="Total Patients">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="42.0" fitWidth="40.0" layoutX="170.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../DoctorChannelling/src/lk/ijse/doctorchanelling/assets/Circled%20User%20Male_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="70.0" layoutY="31.0" text="15">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+                     <input>
+                        <InnerShadow />
+                     </input></DropShadow>
+               </effect>
+            </Pane>
+            <Pane focusTraversable="true" layoutX="14.0" layoutY="14.0" opacity="0.22" prefHeight="79.0" prefWidth="432.0" style="-fx-background-radius: 10;" styleClass="paneA" stylesheets="@../style/dashboardx.css">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="72.0" layoutX="345.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Plus_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="28.0" layoutY="-1.0" text="Today Appointments">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="141.0" layoutY="41.0" text="15">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="29.65" radius="21.737499999999997" spread="0.3" width="59.3">
+                     <input>
+                        <InnerShadow />
+                     </input></DropShadow>
+               </effect>
+            </Pane>
+            <LineChart layoutX="3.0" layoutY="134.0" prefHeight="298.0" prefWidth="610.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <Label layoutX="140.0" layoutY="111.0" text="Total Income" textFill="#e1c7c7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <AreaChart layoutX="649.0" layoutY="134.0" prefHeight="298.0" prefWidth="575.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </AreaChart>
+            <Label layoutX="861.0" layoutY="111.0" text="Total Income" textFill="#e1c7c7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="btnClose" fitHeight="31.0" fitWidth="37.0" layoutX="1310.0" layoutY="11.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Cancel_96px.png" />
+         </image>
+         <effect>
+            <InnerShadow height="23.97" width="18.03" />
+         </effect>
+      </ImageView>
+      <Pane fx:id="paneOtherService" cache="true" layoutX="921.0" layoutY="574.0" onMouseClicked="#loadOtherServices" prefHeight="130.0" prefWidth="205.0" styleClass="box" stylesheets="@../style/dashboardx.css" AnchorPane.topAnchor="574.0">
+         <children>
+            <Label layoutX="65.0" layoutY="77.0" text="Other services" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="78.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Doctors%20Bag_104px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="0.0" radius="63.25" width="255.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+      <Label layoutX="9.0" layoutY="10.0" text="Welcome to Application" textFill="#bfb9b9">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane fx:id="paneHome" cache="true" layoutX="1284.0" layoutY="196.0" onMouseClicked="#loadHome" prefHeight="68.0" prefWidth="73.0" styleClass="box" stylesheets="@../style/dashboardx.css">
+         <children>
+            <Label layoutX="18.0" layoutY="45.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="17.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Home_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="127.5" radius="49.9075" width="74.13">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+      <Pane fx:id="paneManageAppointment" cache="true" layoutX="467.0" layoutY="574.0" onMouseClicked="#loadSchedule" prefHeight="130.0" prefWidth="205.0" styleClass="box" stylesheets="@../style/dashboardx.css" AnchorPane.topAnchor="574.0">
+         <children>
+            <Label layoutX="51.0" layoutY="74.0" text="Manage Schedule" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="77.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/View%20Details_104px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="0.0" radius="63.25" width="255.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+      <Pane fx:id="paneManageAppointment" cache="true" layoutX="695.0" layoutY="574.0" onMouseClicked="#loadManageAppointment" prefHeight="130.0" prefWidth="205.0" styleClass="box" stylesheets="@../style/dashboardx.css" AnchorPane.topAnchor="574.0">
+         <children>
+            <Label layoutX="36.0" layoutY="73.0" text="Manage Appointtment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="51.0" layoutX="78.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Planner_104px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="0.0" radius="63.25" width="255.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+      <Pane fx:id="paneDoctor" cache="true" layoutX="14.0" layoutY="574.0" onMouseClicked="#loadManageDoctor" prefHeight="130.0" prefWidth="205.0" styleClass="box" stylesheets="@../style/dashboardx.css" AnchorPane.topAnchor="574.0">
+         <children>
+            <Label layoutX="58.0" layoutY="70.0" text="Manage Doctor" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Stethoscope_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow choke="0.19" height="0.0" radius="63.25" width="255.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

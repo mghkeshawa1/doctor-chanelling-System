@@ -1,0 +1,74 @@
+.paneA {
+    -fx-background-color: #00A2FF;
+   -fx-opacity: 5.0;
+ 
+}
+
+
+.paneA:hover{
+    -fx-background-color: #008A00;
+    -fx-opacity: 2.0;
+   -fx-border-width: 0.5 ; 
+   -fx-border-color: #457FCA;
+  
+}
+
+
+
+
+
+.pane {
+    -fx-background-color: #38464F;
+   -fx-opacity: 5.0;
+ 
+}
+
+
+.pane:hover{
+    -fx-background-color: #00A2FF;
+   -fx-opacity: 2.0;
+  
+}
+
+
+.box {
+    -fx-background-color: #121417;
+   -fx-opacity: 5.0;
+   /*-fx-border-width: 0 ;*/ 
+}
+
+
+.box:hover{
+    -fx-background-color: #008A00;
+   -fx-opacity: 2.0;
+/*   -fx-border-width: ; */
+   -fx-border-color: #000000;
+}
+
+.logOutButton{
+    -fx-background-color: #FC0000;
+    
+}
+.logOutButton:hover{
+   -fx-background-color: #FFC900;
+   -fx-opacity: 2.0;
+   -fx-border-width: 0.5 ; 
+   -fx-border-color: #000000;
+}
+
+.reportButton{
+    -fx-background-color:  #121417;
+    -fx-opacity: 5.0;
+   -fx-border-width: 0 ; 
+}
+
+.reportButton:hover{
+   -fx-background-color:  #0CA05F;
+   -fx-opacity: 2.0;
+   -fx-border-width: 0.5 ; 
+   -fx-border-color: #000000;
+}
+
+.txtColor{
+    -fx-text-inner-color:#B8FF00;
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="586.0" prefWidth="934.0" style="-fx-background-color: #212325;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.doctorchanelling.controller.MakeAppointmentController">
+   <children>
+      <Rectangle arcHeight="5.0" blendMode="ADD" fill="WHITE" height="514.0" layoutX="9.0" layoutY="53.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="OUTSIDE" width="295.0" />
+      <Label layoutX="97.0" layoutY="66.0" text="Doctor Details" textFill="#9a7e7e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" blendMode="ADD" fill="WHITE" height="383.0" layoutX="315.0" layoutY="185.0" stroke="#00b7ff" strokeLineCap="BUTT" strokeLineJoin="BEVEL" width="306.0" />
+      <JFXTextField layoutX="32.0" layoutY="99.0" prefHeight="25.0" prefWidth="250.0" promptText="Doctor Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <Rectangle arcHeight="5.0" blendMode="ADD" fill="WHITE" height="464.0" layoutX="626.0" layoutY="59.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="OUTSIDE" width="290.0" />
+      <JFXTextField layoutX="30.0" layoutY="151.0" prefHeight="25.0" prefWidth="250.0" promptText="Doctor name">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="33.0" layoutY="202.0" prefHeight="25.0" prefWidth="250.0" promptText="Speciality">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="31.0" layoutY="254.0" prefHeight="25.0" prefWidth="250.0" promptText="Schedule date">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="30.0" layoutY="307.0" prefHeight="25.0" prefWidth="250.0" promptText="Schedule time">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="28.0" layoutY="359.0" prefHeight="25.0" prefWidth="250.0" promptText="Fee of charge">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="337.0" layoutY="247.0" prefHeight="25.0" prefWidth="250.0" promptText="Patient Id">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="337.0" layoutY="287.0" prefHeight="41.0" prefWidth="250.0" promptText="Patient First name">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="337.0" layoutY="333.0" prefHeight="25.0" prefWidth="250.0" promptText="Patient Last name">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="338.0" layoutY="415.0" prefHeight="25.0" prefWidth="250.0" promptText="Patient Mobile">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="337.0" layoutY="456.0" prefHeight="25.0" prefWidth="250.0" promptText="Patient NIC">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <Label layoutX="407.0" layoutY="200.0" text="Patient's Details" textFill="#9a7e7e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="650.0" layoutY="118.0" prefHeight="25.0" prefWidth="250.0" promptText="Appointment Id">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="648.0" layoutY="170.0" prefHeight="25.0" prefWidth="250.0" promptText="Appointment name">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="651.0" layoutY="221.0" prefHeight="25.0" prefWidth="250.0" promptText="Appointment Date">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="649.0" layoutY="273.0" prefHeight="25.0" prefWidth="250.0" promptText="Appointment time">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="648.0" layoutY="326.0" prefHeight="25.0" prefWidth="250.0" promptText="Appointed date">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField layoutX="340.0" layoutY="374.0" prefHeight="25.0" prefWidth="250.0" promptText="Patient Mobile">
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="532.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #00a8ff;" text="GENERATE INVOICE" textFill="#f8f6f6">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="809.0" layoutY="532.0" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #d63031;" text="CLEAR" textFill="#f8f6f6">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="700.0" layoutY="79.0" text="Appointment Details" textFill="#9a7e7e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView layoutX="315.0" layoutY="59.0" prefHeight="118.0" prefWidth="304.0">
+        <columns>
+          <TableColumn fx:id="colPatientName" prefWidth="107.0" text="Patient Name" />
+            <TableColumn fx:id="colPID" prefWidth="110.0" text="PatientId" />
+          <TableColumn fx:id="colNIC" prefWidth="86.0" text="NIC" />
+        </columns>
+      </TableView>
+      <Label layoutX="322.0" layoutY="6.0" text="Filter by :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="420.0" layoutY="10.0" mnemonicParsing="false" text="Name" textFill="#e4cfcf" />
+      <RadioButton layoutX="479.0" layoutY="10.0" mnemonicParsing="false" text="NIC" textFill="#e4cfcf" />
+      <JFXTextField focusColor="WHITE" layoutX="319.0" layoutY="26.0" prefHeight="25.0" prefWidth="203.0" promptText="Search by  name or NIC" styleClass="txtColor" stylesheets="@../style/makeappointment.css" unFocusColor="WHITE" />
+      <JFXButton layoutX="538.0" layoutY="24.0" prefHeight="30.0" prefWidth="63.0" stylesheets="@../style/appointment.css" text="Search" textFill="WHITE" />
+      <JFXTextField layoutX="31.0" layoutY="413.0" prefHeight="25.0" prefWidth="250.0" promptText="Patient per hour">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="5.0" top="10.0" />
+         </padding>
+      </JFXTextField>
+   </children>
+</AnchorPane>

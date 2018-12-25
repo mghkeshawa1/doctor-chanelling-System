@@ -1,0 +1,100 @@
+.styleImportant {
+    -fx-font-weight: bold; /** Does work. */
+    -fx-text-fill: red; /** Does NOT work. */
+}/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:  #2E2C39;
+}
+.txtColor{
+    -fx-text-inner-color:#B8FF00;
+    -fx-prompt-text-fill:  white;
+}
+.combo-box .cell{
+    -fx-text-fill: #B8FF00;
+    -fx-font: 12px "System";
+    -fx-prompt-text-fill: white;
+   
+}
+/*.my-list-cell {
+    -fx-text-fill: #000000;
+    -fx-font: 12px "System";
+    -fx-background-color: #33393D;
+}
+.combo-box .list-cell {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}*/
+.combo-box-popup .list-view{
+    -fx-background-color: #33393D;
+}
+
+.combo-box-popup .list-view .list-cell{
+    -fx-text-fill: #95C11F;
+    -fx-padding: 4 0 4 5;
+    -fx-background-color: #33393D;
+}
+
+
+.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #5B99B6 100%);
+}
+
+/*.table-view .table-row-cell:filled:hover{
+    -fx-cursor:hand;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, white 0%, #f2cc19 90%, white 100%);*/
+/*}*/
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #212325;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #2C2A36;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #95C11F;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
